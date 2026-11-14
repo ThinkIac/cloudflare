@@ -1,0 +1,24 @@
+{
+  "name": "cloudflare",
+  "version": "0.5.0",
+  "type": "module",
+  "main": "index.js",
+  "description": "Cloudflare administration through official OAuth: DNS, Workers, Tunnels, SSL, cache, and diagnostics.",
+  "keywords": ["package", "thinkiac", "cloudflare", "oauth", "mcp"],
+  "files": ["index.js", "lib/", "icon.svg", "README.md", "AGENT.md"],
+  "dependencies": {"@modelcontextprotocol/sdk": "^1.27.1"},
+  "scripts": {"test": "node --test test/*.test.js"},
+  "manifest": {
+    "name": "Cloudflare",
+    "icon": "icon.svg",
+    "launch": false,
+    "keysTab": {
+      "id": "integrations:cloudflare",
+      "label": "Cloudflare",
+      "view": "Index",
+      "renderer": "schema",
+      "surface": "cloudflare-integration",
+      "order": 10
+    }
+  }
+}

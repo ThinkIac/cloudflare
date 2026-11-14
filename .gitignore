@@ -1,0 +1,21 @@
+# OAuth credentials, encryption keys, and audit records are Runtime-local.
+.private/
+oauth/
+credentials.json
+credentials-*.tmp
+key
+audit.jsonl
+
+# Local configuration and accidental secret exports.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.token
+*token*.json
+*secret*.json
